@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ - VR@Tukwila</title>
+    <link rel="stylesheet" href="VRStylesheet.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="faq-header">
+            <h1>Frequently Asked Questions</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="visit.html">Visit Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="faq-container">
+        
+        <div class="faq-item">
+            <button class="faq-question">What is a VR arcade?</button>
+            <div class="faq-answer">
+                <p>A VR arcade is an entertainment venue where customers can experience virtual reality through high-end VR headsets and motion-tracking equipment. It allows players to immerse themselves in interactive games and experiences that feel incredibly realistic.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-question">Do I need prior experience with VR to play?</button>
+            <div class="faq-answer">
+                <p>No experience is necessary! Our staff will assist you with setting up the equipment, understanding the controls, and selecting a game that matches your comfort level. Whether you’re a first-time player or a VR enthusiast, we ensure a fun and smooth experience.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-question">Do I need to make a reservation, or can I walk in?</button>
+            <div class="faq-answer">
+                <p>Walk-ins are welcome, but we recommend making a reservation, especially during weekends and peak hours, to guarantee availability. You can book a session online, over the phone, or in person.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-question">What should I wear for a VR experience?</button>
+            <div class="faq-answer">
+                <p>We recommend wearing comfortable clothing and flat, closed-toe shoes for the best experience. Avoid bulky accessories, hats, or anything that could interfere with the VR headset and motion tracking.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-question">How much does a VR session cost?</button>
+            <div class="faq-answer">
+                <p>Prices start at $10 for a 3-minute session.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What payment methods do you accept?</button>
+            <div class="faq-answer">
+                <p>We only accept payment via credit card and have the cash on-site option.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Will I get motion sickness?</button>
+            <div class="faq-answer">
+                <p>While we can’t 100% guarantee it, we've designed our experiences to be very different from other VR experiences you may have tried before: it is a seated experience and depending on the course selection, experience may vary per user.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Do I need a reservation?</button>
+            <div class="faq-answer">
+                <p>No, but we recommend booking in advance for peak hours.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What's your cleaning and sanitization process?</button>
+            <div class="faq-answer">
+                <p>We clean and disinfect all equipment after every use, including the headsets, lenses, belts, and seats. Our disinfectants are also qualified for use against COVID-19 (coronavirus disease 2019) by the U.S. Environmental Protection Agency (EPA). Sanitizing our equipment and facilities is always a standard procedure as health, safety, and cleanliness is a priority.</p>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Contact Information -->
+            <div class="footer-contact">
+                <h3>CONTACT US</h3>
+                <p>VR@Tukwila</p>
+                <p>Southcenter Mall, Tukwila, WA</p>
+                <p><i class="fas fa-phone"></i> <strong>+1 206-696-4257</strong></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:Vrpanamerica@gmail.com">Vrpanamerica@gmail.com</a></p>
+            </div>
+    
+            <!-- Embedded Google Map -->
+            <div class="footer-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2697.629217593598!2d-122.25675!3d47.45816670000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDfCsDI3JzI5LjQiTiAxMjLCsDE1JzI0LjMiVw!5e0!3m2!1sen!2sus!4v1738878649750!5m2!1sen!2sus" 
+                    width="400" height="250" 
+                    style="border:0;" 
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+    
+            <!-- Useful Links -->
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="visit.html">Visit Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>© 2025 VR@Tukwila, All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script>
+        // JavaScript for toggling FAQ answers
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentNode;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

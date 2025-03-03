@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visit Us - VR@Tukwila</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        #schedule {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        #schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        #schedule-table th, #schedule-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        #schedule-table th {
+            background-color: #000;
+            color: #fff;
+        }
+        #schedule-table td {
+            background-color: #fff;
+        }
+        .book-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .book-btn:hover {
+            background-color: #0056b3;
+        }
+        .booked {
+            background-color: #f2f2f2;
+            color: #888;
+        }
+        #pagination-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        #pagination-controls button {
+            margin: 0 10px;
+            padding: 5px 10px;
+        }
+/* Basic Footer Styling */
+footer {
+    background-color: #666;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Footer Layout */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Contact Section */
+.footer-contact {
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+}
+
+.footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Map */
+.footer-map {
+    flex: 1;
+    max-width: 300px;
+    height: 200px;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Quick Links */
+.footer-links {
+    flex: 1;
+    max-width: 200px;
+    text-align: left;
+}
+
+.footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background: #444;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Visit VR@Tukwila</h1>
+        <p>Find us at Southcenter Mall in Tukwila.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="visit.html">Visit Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Location & Hours</h2>
+        <p>📍 <strong>Southcenter Mall, Tukwila</strong> (Near JCPenney, Ground Floor)</p>
+        <table>
+            <tr><td>🕒 Sunday</td><td>11 AM - 7 PM</td></tr>
+            <tr><td>🕒 Monday</td><td>10 AM - 9 PM</td></tr>
+            <tr><td>🕒 Tuesday</td><td>10 AM - 9 PM</td></tr>
+            <tr><td>🕒 Wednesday</td><td>10 AM - 9 PM</td></tr>
+            <tr><td>🕒 Thursday</td><td>10 AM - 9 PM</td></tr>
+            <tr><td>🕒 Friday</td><td>10 AM - 9 PM</td></tr>
+            <tr><td>🕒 Saturday</td><td>10 AM - 9 PM</td></tr>
+        </table>
+        <p><i class="fa fa-phone"></i> +1 206-696-4257</p>
+        <p><i class="fa fa-envelope"></i> Vrpanamerica@gmail.com</p>
+
+        <section id="directions">
+            <strong>Directions (<em>This is the easiest way to get there!</em>):</strong>
+            <p>Please enter from the <b>south side of the mall</b>. The entrance is located <em>to the left of JCPenney and to the right of Moctezuma's Mexican Restaurant</em>. Once you’ve entered, <b>make a left after Snap! Custom Clothing</b>, and our booths will be located <b>in the center of the walkway</b>.</p>
+        </section>
+
+    </section>
+
+    <section id="schedule">
+        <h2>Schedule Your Visit</h2>
+        <label for="day-select">Select a Day:</label>
+        <select id="day-select">
+            <option value="">-- Select a Day --</option>
+            <option value="Sunday">Sunday</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+        </select>
+
+        <table id="schedule-table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time Slot</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody id="schedule-body"></tbody>
+        </table>
+    </section>
+
+    <div id="pagination-controls">
+        <button id="prev-page" disabled>Previous</button>
+        <span id="page-number">Page 1</span>
+        <button id="next-page">Next</button>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const scheduleBody = document.getElementById("schedule-body");
+            const prevPageBtn = document.getElementById("prev-page");
+            const nextPageBtn = document.getElementById("next-page");
+            const pageNumber = document.getElementById("page-number");
+            const daySelect = document.getElementById("day-select");
+
+            const schedule = {
+                "Sunday": ["11:00 AM", "7:00 PM"],
+                "Monday": ["10:00 AM", "9:00 PM"],
+                "Tuesday": ["10:00 AM", "9:00 PM"],
+                "Wednesday": ["10:00 AM", "9:00 PM"],
+                "Thursday": ["10:00 AM", "9:00 PM"],
+                "Friday": ["10:00 AM", "9:00 PM"],
+                "Saturday": ["10:00 AM", "9:00 PM"]
+            };
+
+            const slotsPerPage = 10;
+            let currentPage = 1;
+            let allSlots = [];
+            let availableSlots = [];
+
+            // Format time to AM/PM
+            function formatTime(date) {
+                const hours = date.getHours();
+                const minutes = date.getMinutes().toString().padStart(2, '0');
+                const ampm = hours >= 12 ? 'PM' : 'AM';
+                const formattedHours = hours % 12 || 12;
+                return `${formattedHours}:${minutes} ${ampm}`;
+            }
+
+            // Convert AM/PM time to 24-hour format for calculations
+            function convertTo24Hour(timeStr) {
+                let [time, modifier] = timeStr.split(" ");
+                let [hours, minutes] = time.split(":");
+                hours = parseInt(hours);
+                if (modifier === "PM" && hours !== 12) hours += 12;
+                if (modifier === "AM" && hours === 12) hours = 0;
+                return `${hours.toString().padStart(2, '0')}:${minutes}`;
+            }
+
+            // Generate 30-minute time slots
+            function generateTimeSlots(start, end, day) {
+                const slots = [];
+                let startTime = new Date(`2024-01-01T${convertTo24Hour(start)}`);
+                let endTime = new Date(`2024-01-01T${convertTo24Hour(end)}`);
+                const slotDuration = 30 * 60 * 1000; // 30 minutes in milliseconds
+
+                while (startTime < endTime) {
+                    let nextTime = new Date(startTime.getTime() + slotDuration);
+                    if (nextTime <= endTime) {
+                        slots.push({ timeSlot: `${formatTime(startTime)} - ${formatTime(nextTime)}`, day });
+                    }
+                    startTime = nextTime;
+                }
+                return slots;
+            }
+
+            // Populate all time slots for each day
+            Object.entries(schedule).forEach(([day, [start, end]]) => {
+                const timeSlots = generateTimeSlots(start, end, day);
+                allSlots.push(...timeSlots);
+            });
+
+            // Check if a slot is booked
+            function isBooked(slot) {
+                const bookedSlots = JSON.parse(localStorage.getItem("bookedSlots") || "[]");
+                return bookedSlots.some(s => s.timeSlot === slot.timeSlot && s.day === slot.day);
+            }
+
+            // Filter available slots for the selected day
+            function filterAvailableSlots(day) {
+                availableSlots = allSlots.filter(slot => slot.day === day && !isBooked(slot));
+                currentPage = 1;
+                renderPage(currentPage);
+            }
+
+            // Render the current page of available slots
+            function renderPage(page) {
+                const startIndex = (page - 1) * slotsPerPage;
+                const endIndex = page * slotsPerPage;
+                const slotsToDisplay = availableSlots.slice(startIndex, endIndex);
+
+                scheduleBody.innerHTML = "";
+                slotsToDisplay.forEach(slot => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                            <td>${slot.day}</td>
+                            <td>${slot.timeSlot}</td>
+                            <td><button class="book-btn" data-day="${slot.day}" data-time="${slot.timeSlot}">Available</button></td>
+                        `;
+                    scheduleBody.appendChild(row);
+                });
+
+                prevPageBtn.disabled = page === 1;
+                nextPageBtn.disabled = page * slotsPerPage >= availableSlots.length;
+                pageNumber.textContent = `Page ${page}`;
+            }
+
+            // Handle booking a slot
+            function bookSlot(slot) {
+                const name = prompt("Enter your name:");
+                if (!name) {
+                    alert("Booking canceled. Name is required.");
+                    return;
+                }
+                const phone = prompt("Enter your phone number:");
+                if (!phone) {
+                    alert("Booking canceled. Phone number is required.");
+                    return;
+                }
+
+                let bookedSlots = JSON.parse(localStorage.getItem("bookedSlots") || "[]");
+                bookedSlots.push({ ...slot, name, phone });
+                localStorage.setItem("bookedSlots", JSON.stringify(bookedSlots));
+
+                alert(`Slot booked successfully for ${name} at ${slot.timeSlot} on ${slot.day}!`);
+                filterAvailableSlots(daySelect.value);
+            }
+
+            // Event listener for booking buttons
+            document.addEventListener("click", (e) => {
+                if (e.target.classList.contains("book-btn")) {
+                    const day = e.target.getAttribute("data-day");
+                    const timeSlot = e.target.getAttribute("data-time");
+                    bookSlot({ day, timeSlot });
+                }
+            });
+
+            // Update schedule when day is selected
+            daySelect.addEventListener("change", () => {
+                const selectedDay = daySelect.value;
+                if (selectedDay) filterAvailableSlots(selectedDay);
+            });
+
+            // Pagination controls
+            prevPageBtn.addEventListener("click", () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderPage(currentPage);
+                }
+            });
+
+            nextPageBtn.addEventListener("click", () => {
+                if (currentPage * slotsPerPage < availableSlots.length) {
+                    currentPage++;
+                    renderPage(currentPage);
+                }
+            });
+
+            // Initialize with Sunday selected
+            daySelect.value = "Sunday";
+            filterAvailableSlots("Sunday");
+        });
+    </script>
+
+<footer>
+    <div class="footer-container">
+        <!-- Contact Information -->
+        <div class="footer-contact">
+            <h3>CONTACT US</h3>
+            <p>VR@Tukwila</p>
+            <p>Southcenter Mall, Tukwila, WA</p>
+            <p><strong>+1 206-696-4257</strong></p>
+            <p><a href="mailto:Vrpanamerica@gmail.com">Vrpanamerica@gmail.com</a></p>
+        </div>
+
+        <!-- Embedded Google Map -->
+        <div class="footer-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2697.629217593598!2d-122.25675!3d47.45816670000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDfCsDI3JzI5LjQiTiAxMjLCsDE1JzI0LjMiVw!5e0!3m2!1sen!2sus!4v1738878649750!5m2!1sen!2sus" 
+                width="300" height="200" 
+                style="border:0;" 
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h3>QUICK LINKS</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+        <p>© 2025 VR@Tukwila, All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
